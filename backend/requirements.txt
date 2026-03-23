@@ -1,0 +1,56 @@
+# Core
+Django==4.2.16
+djangorestframework==3.15.2
+django-cors-headers==4.4.0
+django-filter==24.3
+djangorestframework-simplejwt==5.3.1
+
+# Database
+django-db-geventpool==4.0.1
+
+# H2 (via JDBC-less ORM - use SQLite for local dev, portability via Django ORM)
+# Production: psycopg2-binary for PostgreSQL
+# For H2 compatibility we use SQLite in dev (same ORM abstraction)
+
+# Async / Workers
+celery==5.4.0
+redis==5.1.1
+django-celery-results==2.5.1
+django-celery-beat==2.7.0
+
+# LangChain
+langchain==0.3.7
+langchain-anthropic==0.3.0
+langchain-openai==0.2.9
+langchain-core==0.3.19
+langchain-community==0.3.7
+langgraph==0.2.55
+
+# MCP
+mcp==1.2.0
+anthropic==0.40.0
+
+# API utilities
+drf-spectacular==0.27.2
+django-environ==0.11.2
+
+# Auth
+social-auth-app-django==5.4.2
+
+# Validation / serialization
+pydantic==2.10.3
+
+# Observability
+structlog==24.4.0
+sentry-sdk==2.19.2
+
+# Dev / testing
+pytest==8.3.4
+pytest-django==4.9.0
+pytest-asyncio==0.24.0
+factory-boy==3.3.1
+
+# Utilities
+python-dateutil==2.9.0
+requests==2.32.3
+httpx==0.28.1
